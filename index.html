@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Yovan Collins"/>
+  <title>Yovan Collins Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Yovan</h1>
+    <nav>
+      <a href="photo-gallery.html">Photo Gallery</a>
+      <a href="sonic-fan-club.html">Sonic Fan Club</a>
+      <a href="canvas-redesign.html">Canvas Redesign</a>
+    </nav>
+  </header>
+
+  <main class="index">
+    <section class="intro">
+      <img src="images/me2.jpg" alt="Yovan Collins smiling" class="profile-pic"/>
+      <div class="about">
+        <h2>About Me</h2>
+        <p>My name is Yovan Collins. I’m a self-driven software developer with expertise in building scalable and maintainable systems. I also have experience in participating and leading cross-functional teams. I’m adept at delivering innovative solutions, mentoring peers, and ensuring high system reliability in fast-paced environments. Throughout this website, you will see some of my projects and passion in UI form. Please look through, leave feedback, or reach out to me. I would love to talk about some of my designs or future opportunities.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Form</h2>
+      <form action="mailto:cayovan@aol.com" method="POST" enctype="text/plain" onsubmit="return validateForm()">
+        <label>Name:
+          <input type="text" name="Name" id="name" required/>
+        </label>
+        <label>Phone Number:
+          <input type="tel" name="Phone" id="phone" pattern="[0-9]{10}" required/>
+        </label>
+        <label>Email Address:
+          <input type="email" name="Email" id="email" required/>
+        </label>
+        <label>Notes:
+          <textarea name="Notes" rows="4" required></textarea>
+        </label>
+        <button type="submit">Contact Me</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
