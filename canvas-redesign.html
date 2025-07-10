@@ -8,18 +8,58 @@
 </head>
 <body>
   <header>
-    <h1 class="logo">Yovan</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="photo-gallery.html">Photo Gallery</a>
-      <a href="sonic-fan-club.html">Sonic Fan Club</a>
-    </nav>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/wordmark-bw.svg" alt="Yovan logo" class="logo-img" />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="photo-gallery.html">Photo Gallery</a>
+        <a href="sonic-fan-club.html">Sonic Fan Club</a>
+      </nav>
+    </div>
   </header>
 
   <main class="canvas">
-    <h2>Canvas Redesign</h2>
-    <p>This project shows my redesign of the Canvas UI for better usability and a modern look.</p>
-    <img src="canvas-project.jpg" alt="Canvas redesign screenshot" class="project-image"/>
+    <section class="intro">
+      <div class="about">
+        <h2>Canvas Redesign</h2>
+        <p>
+          This was my senior capstone project: a redesign of Canvas, specifically <strong>asu.instructure.com</strong>. 
+          My goal was to consolidate redundant views and improve usability by merging related content into streamlined pages. 
+          Canvas often forces users to click through multiple pages with minimal navigation feedback, leading to a poor experience for both students and administrators.
+          I followed an SDLC approach using sprint-based planning and regular feedback from focus groups. 
+          The result was a complete UI mockup using ASU branding, consistent color systems, and streamlined flows for home, calendar, and contact pages. 
+          Feedback highlighted improved clarity and accessibility, especially on the Contact and Home pages.
+          The final prototype can be viewed at
+          <a href="https://www.figma.com/proto/ubVumMR2YRhktKi7t3NVFR/Canvas-Redesign?node-id=0-1&t=kgOPcPWr9prQAA1h-1">Figma</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="two-column">
+      <div class="text">
+        <h3>Dashboard View</h3>
+        <p>This view offers a central area to see classes, upcoming assignments, and new messages or group conversations.</p>
+      </div>
+      <img src="images/Canvas-Home.png" alt="Canvas dashboard" class="canvas-img"/>
+    </section>
+
+    <section class="two-column reverse">
+      <img src="images/Canvas-Calendar.png" alt="Canvas calendar view" class="canvas-img"/>
+      <div class="text">
+        <h3>Calendar View</h3>
+        <p>This view offers a straightforward view of upcoming assignments per class. There is also an emphasis on being able to tell completed vs soon due assignments</p>
+      </div>
+    </section>
+
+    <section class="two-column">
+      <div class="text">
+        <h3>Contact View</h3>
+        <p>This view offers a central place to see current class groups, current instructors, and recent communication activities. The professors also have direct links to either call, email, or slack.</p>
+      </div>
+      <img src="images/Canvas-Contact.png" alt="Canvas assignments" class="canvas-img"/>
+    </section>
   </main>
 </body>
 </html>

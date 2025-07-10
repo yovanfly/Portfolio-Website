@@ -56,11 +56,11 @@ main {
   border-radius: 10px;
 }
 
-.about, .contact form {
+.about, .contact form { /*TODO: Do i want background color to be grey???*/
   flex: 1;
-  background-color: #e0e0e0;
+  background-color: #e0e0e0; 
   border-radius: 10px;
-  overflow: hidden; /* ensures header and content stick together */
+  overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -137,8 +137,206 @@ main {
   border-radius: 10px;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+  max-width: 200px;
+}
+
 @media(max-width: 768px) {
   .gallery-grid img, .project-image {
     flex: 1 1 100%;
+  }
+}
+
+/*Gallery Page */
+.gallery section {
+  margin: 2rem auto;
+  max-width: 1100px;
+  padding: 1rem;
+}
+
+.layout-one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.layout-one img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.layout-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.layout-two img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.layout-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.layout-three img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .layout-two, .layout-three {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Canvas Page */
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+
+.two-column .text {
+  order: 1;
+  flex: 0 0 48%;
+}
+.two-column .canvas-img {
+  order: 2;
+  flex: 0 0 48%;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.two-column.reverse .text {
+  order: 2;
+}
+.two-column.reverse .canvas-img {
+  order: 1;
+}
+
+.two-column .text h3 {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px 8px 0 0;
+  margin: 0 0 1rem;
+}
+
+.two-column .text h3 {
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.two-column .text p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.two-column .text {
+  background-color: #ffffff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.two-column .text h3 {
+  padding: 0.75rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .two-column,
+  .two-column.reverse {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .two-column .text,
+  .two-column .canvas-img {
+    order: unset;
+    flex: 0 0 100%;
+    max-width: none;
+  }
+}
+
+/* Sonic Page */
+.sonic-buttons {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sonic-btn {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sonic-btn.active {
+  background-color: #1C1C3C;
+}
+
+.sonic-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.sonic-content h3 {
+  background-color: #3498db;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+
+.sonic-content p {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  margin: 0;
+}
+
+.sonic-img {
+  width: 100%;
+  max-width: 2000px;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sonic-content h3,
+  .sonic-content p {
+    border-radius: 8px;
   }
 }

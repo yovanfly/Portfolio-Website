@@ -8,18 +8,46 @@
 </head>
 <body>
   <header>
-    <h1 class="logo">Yovan</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="photo-gallery.html">Photo Gallery</a>
-      <a href="canvas-redesign.html">Canvas Redesign</a>
-    </nav>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/wordmark-bw.svg" alt="Yovan logo" class="logo-img" />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="photo-gallery.html">Photo Gallery</a>
+        <a href="canvas-redesign.html">Canvas Redesign</a>
+      </nav>
+    </div>
   </header>
 
   <main class="sonic">
-    <h2>Sonic Fan Club</h2>
-    <p>A playful website featuring Sonic the Hedgehog with dynamic design and interactive elements.</p>
-    <img src="sonic-project.jpg" alt="Sonic project screenshot" class="project-image"/>
+    <section class="intro">
+      <div class="about">
+        <h2>Sonic Fan Club</h2>
+        <p>
+          This was a class project and a personal little website that I wanted to try making on my own. 
+          The focus of the project was to practice my HTML, CSS, and JavaScript skills. 
+          I needed to make a website that showcased different capabilities including, 
+          but not limited to: JavaScript event handling, dark mode, forms, dynamic HTML and CSS, and a random math game. 
+          I tackled the project piece by piece, constantly referring to my old work and online resources such as w3schools for refreshers. 
+          For development, I focused on creating the CSS first as it was easiest to move forward knowing in advance how my color schemes would affect my readability. 
+          Following the CSS was the HTML then finally the JS code. The project was completed on time.
+        </p>
+      </div>
+    </section>
+
+    <section class="sonic-buttons">
+      <button class="sonic-btn" data-key="sonic">Sonic</button>
+      <button class="sonic-btn" data-key="shadow">Shadow</button>
+    </section>
+
+    <section class="sonic-content">
+      <h3 id="sonic-title">Press a button</h3>
+      <p id="sonic-desc"></p>
+      <img id="sonic-img" src="" alt="" class="sonic-img"/>
+    </section>
+
+    <script src="script.js"></script>
   </main>
 </body>
 </html>

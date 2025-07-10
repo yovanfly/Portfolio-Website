@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Photo Gallery</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <h1 class="logo">Yovan</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="sonic-fan-club.html">Sonic Fan Club</a>
-      <a href="canvas-redesign.html">Canvas Redesign</a>
-    </nav>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/wordmark-bw.svg" alt="Yovan logo" class="logo-img" />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="sonic-fan-club.html">Sonic Fan Club</a>
+        <a href="canvas-redesign.html">Canvas Redesign</a>
+      </nav>
+    </div>
   </header>
 
   <main class="gallery">
-    <h2>Photo Gallery</h2>
-    <p>This gallery showcases my work with responsive layouts using CSS Flexbox and media queries.</p>
-    <div class="gallery-grid">
-      <img src="photo1.jpg" alt="Project Screenshot 1"/>
-      <img src="photo2.jpg" alt="Project Screenshot 2"/>
-      <img src="photo3.jpg" alt="Project Screenshot 3"/>
-    </div>
+    <section class="intro">
+      <div class="about">
+        <h2>Photo Gallery</h2>
+        <p>
+          This was a class assignment to create a photo gallery website. 
+          The requirement was that the website needed to be responsive and have a phone, tablet, and web view. 
+          I accomplished this task by using a flex display grid and media queries. 
+          For the typical small, medium, and large screen sizes, each had their media query to ensure the website dynamically changed per size. 
+          The project was done on time and uploaded to GitHub.
+        </p>
+      </div>
+    </section>
+
+    <section class="layout-one">
+      <div class="description">The small media query on the website along with the html code. This media query forces the flex grid to have a single column</div>
+      <img src="images/PhotoGallery-Small.png" alt="The website with everything showcased in one column" />
+    </section>
+
+    <section class="layout-two">
+      <div class="description">The medium media query on the website along with the CSS code. This media query forces the flex grid to have two columns</div>
+      <img src="images/PhotoGallery-Medium.png" alt="The website with everything showcased in two columns" />
+    </section>
+
+    <section class="layout-three">
+      <div class="description">The large media query on the website along with the CSS code</div>
+      <div class="description">This media query forces the flex grid to have three columns</div>
+      <img src="images/PhotoGallery-Large.png" alt="The website with everything showcased in three columns" />
+    </section>
   </main>
 </body>
 </html>
